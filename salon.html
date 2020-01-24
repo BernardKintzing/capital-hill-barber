@@ -26,37 +26,40 @@
 |
 -->
 <html>
-	<head>
-		<title>Capital Hill Barber</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-        <link rel="icon" href="images/favicon.png" sizes="32x32" type="image/png">
-	</head>
-	<body class="landing">
 
-		<!-- Header -->
-			<header id="header" class="alt">
-				<h1 id="logo"><a href="index.html">Capital Hill</a></h1>
-				<nav id="nav">
-					<ul>
-						<li><a href="https://go.booker.com/location/CapitalHillBarberStyling/service-menu" target="_blank" class="button alt">Book Now</a></li>
-					</ul>
-				</nav>
-			</header>
+<head>
+	<title>Capital Hill Barber</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+	<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	<link rel="icon" href="images/favicon.png" sizes="32x32" type="image/png">
+</head>
 
-		<!-- Banner -->
-			<section id="banner" class="salonBanner" style=" height: 100vh">
+<body class="landing">
 
-					<img src="images/logo.png" style="filter: invert(100%); width: auto; height: 50vh;">
+	<!-- Header -->
+	<header id="header" class="alt">
+		<h1 id="logo"><a href="index.html">Capital Hill</a></h1>
+		<nav id="nav">
+			<ul>
+				<li><a href="https://go.booker.com/location/CapitalHillBarberStyling/service-menu" target="_blank"
+						class="button alt">Book Now</a></li>
+			</ul>
+		</nav>
+	</header>
 
-			</section>
+	<!-- Banner -->
+	<section id="banner" class="salonBanner" style=" height: 100vh">
 
-		<!-- One -->
-			<!-- <section id="one" class="wrapper style1 special">
+		<img src="images/logo.png" style="filter: invert(100%); width: auto; height: 50vh;">
+
+	</section>
+
+	<!-- One -->
+	<!-- <section id="one" class="wrapper style1 special">
 				<div class="container box alt bordered">
 					<header class="major">
 						<h2>We have a full suite of Services</h2>
@@ -85,172 +88,179 @@
 			</section> -->
 
 
-			<section class="wrapper styleHair special" style="height: 100vh;">
-				<div class="container">
-					<header class="major">
-						<div class="overtext">Hair</div>
-				</header>
-				</div>
-			</section>
+	<section class="wrapper styleHair special" style="height: 100vh;">
+		<div class="container">
+			<header class="major">
+				<div class="overtext">Hair</div>
+			</header>
+		</div>
+	</section>
 
-			<section id="four" class="wrapper style3 special">
+	<section id="four" class="wrapper style3 special">
 
-					<ul class="pad">
-						<li style="display: inline;"><a id="hair" class="chooser special" onclick="haircut()">Haircut</a></li>
-						<li style="display: inline;"><a id="style" class="chooser" onclick="styling()">Hair Styling</a></li>
-						<li style="display: inline;"><a id="color" class="chooser" onclick="color()">Hair Color</a></li>
-						<li style="display: inline;"><a id="care" class="chooser" onclick="care()">Hair Care</a></li>
-					</ul>
-					<div id="innards"></div>
-					<script>
-							document.getElementById("innards").innerHTML = "<p>Women's Wash and Cut<br/>$25<br/><br/>Women's Wash Cut and Style<br/>$30<br/><br/>Long Haircut<br/>$20<br/><br/>Bangs Neck Trim<br/>$5</p>";
+		<ul class="pad">
+			<li style="display: inline;"><a id="hair" class="chooser special" onclick="haircut()">Haircut</a></li>
+			<li style="display: inline;"><a id="style" class="chooser" onclick="styling()">Hair Styling</a></li>
+			<li style="display: inline;"><a id="color" class="chooser" onclick="color()">Hair Color</a></li>
+			<li style="display: inline;"><a id="care" class="chooser" onclick="care()">Hair Care</a></li>
+		</ul>
+		<div id="innards"></div>
+		<script>
+			document.getElementById("innards").innerHTML = "<p>Women's Wash Cut and Style<br/>$35<br/><br/>Long Haircut<br/>$20<br/><br/>Bangs Neck Trim<br/>$5</p>";
 
-							function haircut(){
-								document.getElementById("hair").className = "chooser special";
-								document.getElementById("style").className = "chooser";
-								document.getElementById("color").className = "chooser";
-								document.getElementById("care").className = "chooser";
-								document.getElementById("innards").innerHTML = "<p>Women's Wash and Cut<br/>$25<br/><br/>Women's Wash Cut and Style<br/>$30<br/><br/>Long Haircut<br/>$20<br/><br/>Bangs Neck Trim<br/>$5</p>";
-							}
-							function styling(){
-								document.getElementById("hair").className = "chooser";
-								document.getElementById("style").className = "chooser special";
-								document.getElementById("color").className = "chooser";
-								document.getElementById("care").className = "chooser";
-								document.getElementById("innards").innerHTML = "<p>Shampoo Set<br/>$19<br/><br/>Wedding / Prom Updos<br/>$40<br/><br/>Curls<br/>$40<br/><br/>Braid<br/>$10<br/><br/>Deep Conditioning<br/>$15<br/><br/>Hair Straightening<br/>$80<br/><br/>Deep Cond / Shp / Cut / Stl<br/>$45<br/><br/></p>";
-							}
-							function color(){
-								document.getElementById("hair").className = "chooser";
-								document.getElementById("style").className = "chooser";
-								document.getElementById("color").className = "chooser special";
-								document.getElementById("care").className = "chooser";
-								document.getElementById("innards").innerHTML = "<p>Permanent Color Retouch<br/>$60<br/><br/>Semi - Permanent Color<br/>$55 <br/><br/>Permanent Color<br/>$60<br/><br/>Partial Cap Highlights<br/>$45<br/><br/>Foil Retouch<br/>$65<br/><br/>Foil Highlights<br/>$72<br/><br/>Color Correction<br/>$100<br/><br/></p>";
-							}
-							function care(){
-								document.getElementById("hair").className = "chooser";
-								document.getElementById("style").className = "chooser";
-								document.getElementById("color").className = "chooser";
-								document.getElementById("care").className = "chooser special";
-								document.getElementById("innards").innerHTML = "<p>Permanent Wave<br/>$85<br/><br/>Split / Spiral Perm<br/>$80<br/><br/>Perm<br/>$65<br/><br/>Partial Perm<br/>$50<br/><br/>Cap Highlight<br/>$60<br/><br/></p>";
-							}
-						</script>
+			function haircut() {
+				document.getElementById("hair").className = "chooser special";
+				document.getElementById("style").className = "chooser";
+				document.getElementById("color").className = "chooser";
+				document.getElementById("care").className = "chooser";
+				document.getElementById("innards").innerHTML = "<p>Women's Wash and Cut<br/>$25<br/><br/>Women's Wash Cut and Style<br/>$30<br/><br/>Long Haircut<br/>$20<br/><br/>Bangs Neck Trim<br/>$5</p>";
+			}
+			function styling() {
+				document.getElementById("hair").className = "chooser";
+				document.getElementById("style").className = "chooser special";
+				document.getElementById("color").className = "chooser";
+				document.getElementById("care").className = "chooser";
+				document.getElementById("innards").innerHTML = "<p>Shampoo Set<br/>$19<br/><br/>Wedding / Prom Updos<br/>$40<br/><br/>Curls<br/>$40<br/><br/>Braid<br/>$10<br/><br/>Deep Conditioning<br/>$15<br/><br/>Hair Straightening<br/>$80<br/><br/>Deep Cond / Shp / Cut / Stl<br/>$45<br/><br/></p>";
+			}
+			function color() {
+				document.getElementById("hair").className = "chooser";
+				document.getElementById("style").className = "chooser";
+				document.getElementById("color").className = "chooser special";
+				document.getElementById("care").className = "chooser";
+				document.getElementById("innards").innerHTML = "<p>Permanent Color Retouch<br/>$60<br/><br/>Semi - Permanent Color<br/>$55 <br/><br/>Permanent Color<br/>$60<br/><br/>Partial Cap Highlights<br/>$45<br/><br/>Foil Retouch<br/>$65<br/><br/>Foil Highlights<br/>$72<br/><br/>Color Correction<br/>$100<br/><br/></p>";
+			}
+			function care() {
+				document.getElementById("hair").className = "chooser";
+				document.getElementById("style").className = "chooser";
+				document.getElementById("color").className = "chooser";
+				document.getElementById("care").className = "chooser special";
+				document.getElementById("innards").innerHTML = "<p>Permanent Wave<br/>$85<br/><br/>Split / Spiral Perm<br/>$80<br/><br/>Perm<br/>$65<br/><br/>Partial Perm<br/>$50<br/><br/>Cap Highlight<br/>$60<br/><br/></p>";
+			}
+		</script>
 
-				<div class="clear"></div>
-						<a href="https://go.booker.com/location/CapitalHillBarberStyling/service-menu" target="_blank" class="button alt">Book Now</a>
-			</section>
+		<div class="clear"></div>
+		<a href="https://go.booker.com/location/CapitalHillBarberStyling/service-menu" target="_blank"
+			class="button alt">Book Now</a>
+	</section>
 
-			<section class="wrapper styleNails special" style="height: 100vh;">
-					<div class="container">
-						<header class="major">
-							<div class="overtext">Nails</div>
-					</header>
-					</div>
-				</section>
-	
-			<section id="four" class="wrapper style3 special">
-					<ul class="pad">
-						<li style="display: inline;"><a id="mani" class="chooser special" onclick="mani()">Manicure</a></li>
-						<li style="display: inline;"><a id="pedi" class="chooser" onclick="pedi()">Pedicure</a></li>
-						<li style="display: inline;"><a id="nails" class="chooser" onclick="nails()">Nails</a></li>
-					</ul>
+	<section class="wrapper styleNails special" style="height: 100vh;">
+		<div class="container">
+			<header class="major">
+				<div class="overtext">Nails</div>
+			</header>
+		</div>
+	</section>
 
-					<div id="nailInnards"></div>
-					<script>
-							document.getElementById("nailInnards").innerHTML = "<p>Mini Manicure<br>$15<br><br>Spa Manicure<br>$30<br><br>Shellac Change<br>$20<br><br>Shellac Manicure<br>$42<br><br></p>";
+	<section id="four" class="wrapper style3 special">
+		<ul class="pad">
+			<li style="display: inline;"><a id="mani" class="chooser special" onclick="mani()">Manicure</a></li>
+			<li style="display: inline;"><a id="pedi" class="chooser" onclick="pedi()">Pedicure</a></li>
+			<li style="display: inline;"><a id="nails" class="chooser" onclick="nails()">Nails</a></li>
+		</ul>
 
-							function mani(){
-								document.getElementById("mani").className = "chooser special";
-								document.getElementById("pedi").className = "chooser";
-								document.getElementById("nails").className = "chooser";
-								document.getElementById("nailInnards").innerHTML = "<p>Mini Manicure<br>$15<br><br>Spa Manicure<br>$30<br><br>Shellac Change<br>$20<br><br>Shellac Manicure<br>$42<br><br></p>";
-							}
-							function pedi(){
-								document.getElementById("mani").className = "chooser";
-								document.getElementById("pedi").className = "chooser special";
-								document.getElementById("nails").className = "chooser";
-								document.getElementById("nailInnards").innerHTML = "<p>Mini Pedicure<br>$25<br><br>Spa Pedicure<br>$50</p>";
-							}
-							function nails(){
-								document.getElementById("mani").className = "chooser";
-								document.getElementById("pedi").className = "chooser";
-								document.getElementById("nails").className = "chooser special";
-								document.getElementById("nailInnards").innerHTML = "<p>Full Set Nails<br>$50<br><br>Nail Fill<br>$30<br><br>Nail Fix<br>$5<br><br>Nail Removal<br>$20<br><br></p>";
-							}
-						</script>
-						<a href="https://go.booker.com/location/CapitalHillBarberStyling/service-menu" target="_blank" class="button alt">Book Now</a>
-			</section>
+		<div id="nailInnards"></div>
+		<script>
+			document.getElementById("nailInnards").innerHTML = "<p>Mini Manicure<br>$15<br><br>Spa Manicure<br>$30<br><br>Shellac Change<br>$20<br><br>Shellac Manicure<br>$42<br><br></p>";
 
-			<section class="wrapper styleFace special" style="height: 100vh;">
-					<div class="container">
-						<header class="major">
-							<div class="overtext">Face</div>
-					</header>
-					</div>
-				</section>
-	
-			<section id="four" class="wrapper style3 special">
-					<ul class="pad">
-						<li style="display: inline;"><a id="eye" class="chooser special" onclick="eye()">Eyelashes</a></li>
-						<li style="display: inline;"><a id="make" class="chooser" onclick="make()">Makeup</a></li>
-						<li style="display: inline;"><a id="scare" class="chooser" onclick="scare()">Skin Care</a></li>
-						<li style="display: inline;"><a id="wax" class="chooser" onclick="wax()">Waxing</a></li>
-					</ul>
-					<div id="faceInnards"></div>
-					<script>
-							document.getElementById("faceInnards").innerHTML = "<p>Eyelash Extension Fill<br/>$50</p>";
+			function mani() {
+				document.getElementById("mani").className = "chooser special";
+				document.getElementById("pedi").className = "chooser";
+				document.getElementById("nails").className = "chooser";
+				document.getElementById("nailInnards").innerHTML = "<p>Mini Manicure<br>$15<br><br>Spa Manicure<br>$30<br><br>Shellac Change<br>$20<br><br>Shellac Manicure<br>$42<br><br></p>";
+			}
+			function pedi() {
+				document.getElementById("mani").className = "chooser";
+				document.getElementById("pedi").className = "chooser special";
+				document.getElementById("nails").className = "chooser";
+				document.getElementById("nailInnards").innerHTML = "<p>Mini Pedicure<br>$25<br><br>Spa Pedicure<br>$50</p>";
+			}
+			function nails() {
+				document.getElementById("mani").className = "chooser";
+				document.getElementById("pedi").className = "chooser";
+				document.getElementById("nails").className = "chooser special";
+				document.getElementById("nailInnards").innerHTML = "<p>Full Set Nails<br>$50<br><br>Nail Fill<br>$30<br><br>Nail Fix<br>$5<br><br>Nail Removal<br>$20<br><br></p>";
+			}
+		</script>
+		<a href="https://go.booker.com/location/CapitalHillBarberStyling/service-menu" target="_blank"
+			class="button alt">Book Now</a>
+	</section>
 
-							function eye(){
-								document.getElementById("eye").className = "chooser special";
-								document.getElementById("make").className = "chooser";
-								document.getElementById("scare").className = "chooser";
-								document.getElementById("wax").className = "chooser";
-								document.getElementById("faceInnards").innerHTML = "<p>Eyelash Extension Fill<br/>$50</p>";
-							}
-							function make(){
-								document.getElementById("eye").className = "chooser";
-								document.getElementById("make").className = "chooser special";
-								document.getElementById("scare").className = "chooser";
-								document.getElementById("care").className = "chooser";
-								document.getElementById("faceInnards").innerHTML = "<p>Makeup Application<br/>$50<br/><br/>Makeup Instruction<br/>$75 <br/></p>";
-							}
-							function scare(){
-								document.getElementById("eye").className = "chooser";
-								document.getElementById("make").className = "chooser";
-								document.getElementById("scare").className = "chooser special";
-								document.getElementById("wax").className = "chooser";
-								document.getElementById("faceInnards").innerHTML = "<p>Facial<br/>$50</p>";
-							}
-							function wax(){
-								document.getElementById("eye").className = "chooser";
-								document.getElementById("make").className = "chooser";
-								document.getElementById("scare").className = "chooser";
-								document.getElementById("wax").className = "chooser special";
-								document.getElementById("faceInnards").innerHTML = "<p>Eye Brow Wax<br/>$12<br/><br/>Brow, Lip, & Chin<br/>$30 <br/><br/>Cheek Wax<br/>$20<br/><br/>Chin Only<br/>$12<br/><br/>Ears<br/>$10<br/><br/>Upper Lip<br/>$10<br/><br/>Nose Wax<br/>$15<br/><br/></p>";
-							}
-						</script>
-						<a href="https://go.booker.com/location/CapitalHillBarberStyling/service-menu" target="_blank" class="button alt">Book Now</a>
-			</section>
+	<section class="wrapper styleFace special" style="height: 100vh;">
+		<div class="container">
+			<header class="major">
+				<div class="overtext">Face</div>
+			</header>
+		</div>
+	</section>
 
-			<section class="wrapper styleBrick special" style="height: 100vh;">
-					<div class="container">
-						<header class="major">
-							<div class="overtext">About Us</div>
-					</header>
-					</div>
-				</section>
- 	
-				<section id="four" class="wrapper style3 special">
-					<h2>About Us</h2>
-					<div class="padded">
-					<p>                        
-                        Capital Hill Barber Shop & Styling Salon has become somewhat of a Helena institution. From its beginning as a small barbershop in the Capital Hill Shopping Center in 1965 to the present, our shop has grown &  thrived. <br/><br/>
+	<section id="four" class="wrapper style3 special">
+		<ul class="pad">
+			<li style="display: inline;"><a id="eye" class="chooser special" onclick="eye()">Eyelashes</a></li>
+			<li style="display: inline;"><a id="make" class="chooser" onclick="make()">Makeup</a></li>
+			<li style="display: inline;"><a id="scare" class="chooser" onclick="scare()">Skin Care</a></li>
+			<li style="display: inline;"><a id="wax" class="chooser" onclick="wax()">Waxing</a></li>
+		</ul>
+		<div id="faceInnards"></div>
+		<script>
+			document.getElementById("faceInnards").innerHTML = "<p>Eyelash Extension Fill<br/>$50</p>";
 
-                        Capital Hill Barber Shop & Styling Salon has stood the test of time. Over its 54 years, other barbershops and salons have come and gone. Our dedicated staff has helped us adapt to the changing need of the Helena community, at the same time adhering to our tradition of friendly, quality service.
-				        <br/><br/>
-                    </p>
-							<!-- <a href="https://go.booker.com/location/CapitalHillBarberStyling/service-menu" target="_blank" class="button alt">Book Now</a> -->
+			function eye() {
+				document.getElementById("eye").className = "chooser special";
+				document.getElementById("make").className = "chooser";
+				document.getElementById("scare").className = "chooser";
+				document.getElementById("wax").className = "chooser";
+				document.getElementById("faceInnards").innerHTML = "<p>Eyelash Extension Fill<br/>$50</p>";
+			}
+			function make() {
+				document.getElementById("eye").className = "chooser";
+				document.getElementById("make").className = "chooser special";
+				document.getElementById("scare").className = "chooser";
+				document.getElementById("care").className = "chooser";
+				document.getElementById("faceInnards").innerHTML = "<p>Makeup Application<br/>$50<br/><br/>Makeup Instruction<br/>$75 <br/></p>";
+			}
+			function scare() {
+				document.getElementById("eye").className = "chooser";
+				document.getElementById("make").className = "chooser";
+				document.getElementById("scare").className = "chooser special";
+				document.getElementById("wax").className = "chooser";
+				document.getElementById("faceInnards").innerHTML = "<p>Facial<br/>$50</p>";
+			}
+			function wax() {
+				document.getElementById("eye").className = "chooser";
+				document.getElementById("make").className = "chooser";
+				document.getElementById("scare").className = "chooser";
+				document.getElementById("wax").className = "chooser special";
+				document.getElementById("faceInnards").innerHTML = "<p>Eye Brow Wax<br/>$12<br/><br/>Brow, Lip, & Chin<br/>$30 <br/><br/>Cheek Wax<br/>$20<br/><br/>Chin Only<br/>$12<br/><br/>Ears<br/>$10<br/><br/>Upper Lip<br/>$10<br/><br/>Nose Wax<br/>$15<br/><br/></p>";
+			}
+		</script>
+		<a href="https://go.booker.com/location/CapitalHillBarberStyling/service-menu" target="_blank"
+			class="button alt">Book Now</a>
+	</section>
 
-<!--
+	<section class="wrapper styleBrick special" style="height: 100vh;">
+		<div class="container">
+			<header class="major">
+				<div class="overtext">About Us</div>
+			</header>
+		</div>
+	</section>
+
+	<section id="four" class="wrapper style3 special">
+		<h2>About Us</h2>
+		<div class="padded">
+			<p>
+				Capital Hill Barber Shop & Styling Salon has become somewhat of a Helena institution. From its beginning
+				as a small barbershop in the Capital Hill Shopping Center in 1965 to the present, our shop has grown &
+				thrived. <br /><br />
+
+				Capital Hill Barber Shop & Styling Salon has stood the test of time. Over its 54 years, other
+				barbershops and salons have come and gone. Our dedicated staff has helped us adapt to the changing need
+				of the Helena community, at the same time adhering to our tradition of friendly, quality service.
+				<br /><br />
+			</p>
+			<!-- <a href="https://go.booker.com/location/CapitalHillBarberStyling/service-menu" target="_blank" class="button alt">Book Now</a> -->
+
+			<!--
 					<h3>Meet Our Team</h3>
 						<div class="profile">
 							<img src="images/team01.jpg">
@@ -285,13 +295,13 @@
 								<div class="undertext">Somebody Someone</div>
 						</div>
 -->
-						<div class="clear"></div>
-						<h3>Stop in today!</h3>
-					</div>
-				</section>
-	
+			<div class="clear"></div>
+			<h3>Stop in today!</h3>
+		</div>
+	</section>
 
-<!--
+
+	<!--
 				<section class="wrapper styleColor special" style="height: 100vh;">
 						<div class="container">
 							<header class="major">
@@ -308,70 +318,75 @@
 							$55 + <br/></p>
 								<a href="https://go.booker.com/location/CapitalHillBarberStyling/service-menu" target="_blank" class="button alt">Book Now</a>
 					</section> -->
-		
 
-		<!-- Footer -->
-			<div id="footer">
-					<div class="row uniform">
-						
-							<div class="leftofmap">
-									<h3>Contact Us</h3>
-								<ul class="labeled-icons">
-									<li>
-										<h4 class="icon fa-home"><span class="label">Address</span></h4>
-										521 N. Sanders, Capital Plaza<br />
-										Helena, MT 59601
-									</li>
-									<li>
-										<h4 class="icon fa-clock-o"><span class="label">Address</span></h4>
-										Monday-Friday 8AM - 6PM
-										<br>
-										Saturday 8AM - 3PM
-									</li>
-									<li>
-										<h4 class="icon fa-phone"><span class="label">Phone</span></h4>
-										(406) 442-6812
-									</li>
-								</ul>
-								<a class="icon fa-facebook" href="https://facebook.com/CapitalHillBarberShopandSalon/" style="font-size:2em; margin-right: 1em;margin-left: 2em;  "></a>
-								<a class="icon fa-instagram" href="http://instagram.com/capitalhillbarbershopandsalon/" style="font-size:2em"></a> ￼￼ ￼￼ ￼
-							</div>
-								<div id="map"></div>
-								<script>
-								  var map;
-								  function initMap() {
-									map = new google.maps.Map(document.getElementById('map'), {
-									  center: {lat: 46.589376, lng: -112.014302},
-									  zoom: 18
-									});
-									var marker = new google.maps.Marker({
-										position: {lat: 46.589586, lng: -112.014302},
-										map: map,
-										title: "iPoc",
-										id: this,
-										animation: google.maps.Animation.DROP
-									});
-								  }
-								</script>
-								<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDoluv1ebfXUa3989R-IxDLe3lRorJGHWo&callback=initMap"
-								async defer></script>
-					</div>
 
-				<div class="copyright">
-					&copy; Capital Hill Barber | Design By   <a href="http://www.goldblockchain.us">Gold Block Chain</a> | All rights reserved.
-				</div>
+	<!-- Footer -->
+	<div id="footer">
+		<div class="row uniform">
+
+			<div class="leftofmap">
+				<h3>Contact Us</h3>
+				<ul class="labeled-icons">
+					<li>
+						<h4 class="icon fa-home"><span class="label">Address</span></h4>
+						521 N. Sanders, Capital Plaza<br />
+						Helena, MT 59601
+					</li>
+					<li>
+						<h4 class="icon fa-clock-o"><span class="label">Address</span></h4>
+						Monday-Friday 8AM - 6PM
+						<br>
+						Saturday 8AM - 3PM
+					</li>
+					<li>
+						<h4 class="icon fa-phone"><span class="label">Phone</span></h4>
+						(406) 442-6812
+					</li>
+				</ul>
+				<a class="icon fa-facebook" href="https://facebook.com/CapitalHillBarberShopandSalon/"
+					style="font-size:2em; margin-right: 1em;margin-left: 2em;  "></a>
+				<a class="icon fa-instagram" href="http://instagram.com/capitalhillbarbershopandsalon/"
+					style="font-size:2em"></a> ￼￼ ￼￼ ￼
 			</div>
+			<div id="map"></div>
+			<script>
+				var map;
+				function initMap() {
+					map = new google.maps.Map(document.getElementById('map'), {
+						center: { lat: 46.589376, lng: -112.014302 },
+						zoom: 18
+					});
+					var marker = new google.maps.Marker({
+						position: { lat: 46.589586, lng: -112.014302 },
+						map: map,
+						title: "iPoc",
+						id: this,
+						animation: google.maps.Animation.DROP
+					});
+				}
+			</script>
+			<script
+				src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDoluv1ebfXUa3989R-IxDLe3lRorJGHWo&callback=initMap"
+				async defer></script>
+		</div>
 
-		<!-- Scripts -->
+		<div class="copyright">
+			&copy; Capital Hill Barber | Design By <a href="http://www.goldblockchain.us">Gold Block Chain</a> | All
+			rights reserved.
+		</div>
+	</div>
 
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.scrollgress.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
+	<!-- Scripts -->
 
-	</body>
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.dropotron.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/jquery.scrollgress.min.js"></script>
+	<script src="assets/js/skel.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+	<script src="assets/js/main.js"></script>
+
+</body>
+
 </html>
