@@ -356,6 +356,11 @@ a.button {
     background-image: url("/assets/images/nails.jpg");
 }
 
+.parallax-background.salon-wax {
+    --default-copy-color: #ffffff;
+    background-image: url("/assets/images/wax.jpg");
+}
+
 .parallax-background>.text {
     align-self: center;
     font-family: var(--heading-font);
